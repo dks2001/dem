@@ -7,7 +7,7 @@ spark = SparkSession.builder.appName("SamplePySpark").getOrCreate()
 # Reading CSV files into DataFrames
 df1 = spark.read.csv("path/to/df1.csv", header=True, inferSchema=True)
 df2 = spark.read.csv("path/to/df2.csv", header=True, inferSchema=True)
-
+df2 = spark.read.csv("path/to/df2.csv", header=True, inferSchema=True)
 # Joining DataFrames
 joined_df = df1.join(df2, on="common_column", how="inner")
 
